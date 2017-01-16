@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FriendFinder</title>
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Font Awesome Glyphicons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!-- Chosen -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Questions that Will Find You Pals, We Hope</h2>
+        <hr>
+        <h3><strong>Tell Us More</strong></h3>
+        <h4>Name (required)</h4>
+        <input type="text" name="" id="name" class="form-control" required>
+        <h4>Give us a link to a realistic picture of you (required)</h4>
+        <input type="text" name="" id="photo" class="form-control" required>
+        <hr>
+        <h3><strong>Answer on a Scale of 1 (super disagree) to 5 (mega agree)</strong></h3>
+        <h3><strong>Question 1</strong></h3>
+        <h4>A day without coffee is a day not lived</h4>
+        <select class="ans-select" id="q1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <h3><strong>Question 2</strong></h3>
+        <h4>I prefer sunshine and the beach to all other locales.</h4>
+        <select class="ans-select" id="q2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <h3><strong>Question 3</strong></h3>
+        <h4>My favorite Friday night activity is Star Wars and a bucket 'o popcorn on the couch.</h4>
+        <select class="ans-select" id="q3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <h3><strong>Question 4</strong></h3>
+        <h4>Jimmy Choo?</h4>
+        <select class="ans-select" id="q4">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <h3><strong>Question 5</strong></h3>
+        <h4>I can't sit still for more than 3 hours at a time, or I go nuts.</h4>
+        <select class="ans-select" id="q5">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <h3><strong>Question 6</strong></h3>
+        <h4>Everyone meal should end with dessert.</h4>
+        <select class="ans-select" id="q6">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <h3><strong>Question 7</strong></h3>
+        <h4>Wine over beer, any day of the year.</h4>
+        <select class="ans-select" id="q7">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <h3><strong>Question 8</strong></h3>
+        <h4>Long hair = a must.</h4>
+        <select class="ans-select" id="q8">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <h3><strong>Question 9</strong></h3>
+        <h4>You only get half of the sidwalk.</h4>
+        <select class="ans-select" id="q9">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <h3><strong>Question 10</strong></h3>
+        <h4>Coders are attractive.</h4>
+        <select class="ans-select" id="q10">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br>
+        <br>
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit
+        </button>
+        <hr>
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/branvh/FriendFinder">Code on Github</a></p>
+            </div>
+        </footer>
+    </div>
+    <!-- Modal -->
+    <div id="match" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title"><strong>Best Match</strong></h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="matchName"></h2>
+                    <img id="matchImg" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    // Get user inputs
+    $("#submit").on("click", function() {
+        //make an object with user input data
+        let user = {
+            name: $("#name").val().trim(),
+            photo: $("#photo").val().trim(),
+            scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
+        }
+
+        if (!user.name || !user.photo) {
+
+            user.scores.forEach((cur, ind) => {
+
+                if (!cur) {
+                	alert('You must fill out ALLLLL of the fields');
+                	return false
+                }
+
+            });
+
+        }
+
+        console.log(user);
+
+        let url = window.location.origin;
+
+        //send to server
+        $.post(url + "/api/friends", user, (info) => {
+
+            // display a match in a modal box
+            $("#matchName").text(info.name);
+            $('#matchImg').attr("src", info.photo);
+            $("#match").modal('toggle');
+
+        });
+
+    });
+    </script>
+</body>
+
+</html>
