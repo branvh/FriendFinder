@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>FriendFinder</title>
-    <!-- Latest compiled and minified CSS & JS -->
+    <title>Friend Finder</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!-- Font Awesome Glyphicons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <!-- Chosen -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
 </head>
 
 <body>
@@ -21,7 +15,7 @@
         <hr>
         <h3><strong>Tell Us More</strong></h3>
         <h4>Name (required)</h4>
-        <input type="text" name="" id="name" class="form-control" required>
+        <input type="text" id="name" class="form-control" required>
         <h4>Give us a link to a realistic picture of you (required)</h4>
         <input type="text" name="" id="photo" class="form-control" required>
         <hr>
@@ -118,7 +112,6 @@
         </select>
         <br>
         <br>
-        <!-- Submit Button -->
         <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i> Submit
         </button>
         <hr>
@@ -139,7 +132,7 @@
                 </div>
                 <div class="modal-body">
                     <h2 id="matchName"></h2>
-                    <img id="matchImg" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+                    <img id="matchImg" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="" width="200" height="200">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -157,20 +150,10 @@
             scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
         }
 
-        if (!user.name || !user.photo) {
-
-            user.scores.forEach((cur, ind) => {
-
-                if (!cur) {
+        if (user.name === '' || user.photo==='') {
                 	alert('You must fill out ALLLLL of the fields');
                 	return false
-                }
-
-            });
-
-        }
-
-        console.log(user);
+            }
 
         let url = window.location.origin;
 

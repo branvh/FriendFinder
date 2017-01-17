@@ -1,9 +1,8 @@
-let pals = [{"name":"Ahmed","photo":"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg","scores":["5","1","4","4","5","1","2","5","4","1"]},
-{"name":"Jacob Deming","photo":"https://pbs.twimg.com/profile_images/691785039043022849/oWsy8LNR.jpg","scores":["4","2","5","1","3","2","2","1","3","2"]},
-{"name":"Jeremiah Scanlon","photo":"https://avatars2.githubusercontent.com/u/8504998?v=3&s=460","scores":["5","2","2","2","4","1","3","2","5","5"]},
-{"name":"Louis T. Delia","photo":"https://pbs.twimg.com/profile_images/639214960049000449/lNCRC-ub.jpg","scores":["3","3","4","2","2","1","3","2","2","3"]},
-{"name":"Lou Ritter","photo":"https://m.facebook.com/photo.php?fbid=10208500699025296&id=1542229019&set=a.1549418665704.77596.1542229019&source=11","scores":["4","3","4","1","5","2","5","3","1","4"]},
-{"name":"Jordan Biason","photo":"https://scontent-ord1-1.xx.fbcdn.net/v/t1.0-9/12741971_10205764267089153_4212986785721953092_n.jpg?oh=4e18265f7d380167223a97fbd7eba278&oe=57B78445","scores":["4","4","2","3","2","2","3","2","4","5"]},
+let pals = [{"name":"Coach","photo":"http://thesportsfanjournal.com/wp-content/uploads/2016/11/os-jim-harbaugh-recruiting-matt-murschel-0118-20160117.jpg","scores":["3","1","4","4","5","1","2","5","4","1"]},
+{"name":"Tom","photo":"http://www.trbimg.com/img-55e87580/turbine/bal-tom-brady-and-the-patriots-wont-cheat-for-a-while-20150903","scores":["4","2","5","1","3","2","2","1","3","2"]},
+{"name":"Tiger","photo":"http://i.pgatour.com/image/upload/c_fill,f_auto,g_center,h_469,q_80,w_850/v1/pgatour/editorial/2015/12/03/tiger-847-darrencarroll.jpg","scores":["3","2","2","2","4","1","3","2","5","5"]},
+{"name":"Stephen","photo":"http://static6.businessinsider.com/image/5670866772f2c14a008b5da0-480/stephen-curry.jpg","scores":["5","3","4","2","2","1","3","2","2","3"]},
+{"name":"Lou Ritter","photo":"Kris","scores":["2","3","4","1","5","2","5","3","1","4"]}
 ];
 
 module.exports = pals;
